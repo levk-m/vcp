@@ -1,0 +1,12 @@
+:Vcp	vcp.txt	/*:Vcp*
+g:vcp_dir	vcp.txt	/*g:vcp_dir*
+g:vcp_height	vcp.txt	/*g:vcp_height*
+g:vcp_no_mappings	vcp.txt	/*g:vcp_no_mappings*
+vcp-compat	vcp.txt	/*vcp-compat*
+vcp-config	vcp.txt	/*vcp-config*
+vcp-install	vcp.txt	/*vcp-install*
+vcp-intro	vcp.txt	/*vcp-intro*
+vcp-requirements	vcp.txt	/*vcp-requirements*
+vcp-templates	vcp.txt	/*vcp-templates*
+vcp-usage	vcp.txt	/*vcp-usage*
+vcp.txt	vcp.txt	/*vcp.txt*

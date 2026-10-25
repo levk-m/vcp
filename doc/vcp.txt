@@ -1,0 +1,67 @@
+*vcp.txt*  vcp - template picker for Vim
+
+==============================================================================
+INTRO                                                         *vcp-intro*
+
+vcp opens a popup menu with template files and inserts the selected one.
+Vim only; Neovim is not supported.
+
+==============================================================================
+REQUIREMENTS                                           *vcp-requirements*
+
+Vim 8.1.1391+ with |+popupwin| (8.2+ recommended).
+
+==============================================================================
+INSTALL                                                  *vcp-install*
+
+    mkdir -p ~/.vim/pack/plugins/start
+    git clone https://github.com/levk-m/vcp.git \
+        ~/.vim/pack/plugins/start/vcp
+
+Help tags are optional:
+
+    vim -u NONE -c 'helptags ~/.vim/pack/plugins/start/vcp/doc' -c q
+
+With vim-plug:
+
+    Plug 'levk-m/vcp'
+
+==============================================================================
+CONFIG                                                   *vcp-config*
+
+                                                        *g:vcp_dir*
+Folder with templates. Defaults to the plugin's templates/ directory.
+
+    let g:vcp_dir = expand('~/.vim/cp_templates')
+
+                                                    *g:vcp_no_mappings*
+Set to 1 to keep <C-t> free.
+
+                                                        *g:vcp_height*
+Max popup height. Default 15.
+
+==============================================================================
+USAGE                                                     *vcp-usage*
+
+                                                            *:Vcp*
+:Vcp            Pick a template. <C-t> does the same.
+
+The template fills an empty buffer, otherwise it is inserted below the
+current line.
+
+==============================================================================
+TEMPLATES                                             *vcp-templates*
+
+Any readable file in |g:vcp_dir| is a template. Hidden files and
+directories are ignored.
+
+==============================================================================
+COMPAT                                                     *vcp-compat*
+
+Old names still work: :CpTemplate, g:cp_templates_dir,
+g:cp_templates_height, g:cp_templates_no_mappings, cp_templates#open().
+
+Remove ~/.vim/pack/plugins/start/cp_templates if it is still installed.
+
+==============================================================================
+vim:tw=78:ts=8:ft=help:norl:
